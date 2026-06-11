@@ -3,6 +3,7 @@ import api from "../services/api";
 
 function SearchHistory() {
   const [history, setHistory] = useState([]);
+
   useEffect(() => {
     api
       .get("/search-history")
@@ -13,6 +14,10 @@ function SearchHistory() {
         console.error(err);
       });
   }, []);
+
+  if (history.length === 0) {
+    return <h2 className="text-center mt-10">Belum ada riwayat pencarian</h2>;
+  }
 
   return (
     <div style={{ padding: "20px" }}>
@@ -33,9 +38,6 @@ function SearchHistory() {
       ))}
     </div>
   );
-  if (history.length === 0) {
-    return <h2 className="text-center mt-10">Belum ada riwayat pencarian</h2>;
-  }
 }
 
 export default SearchHistory;
