@@ -5,5 +5,5 @@ Project Kelompok 8
 ## Tim
 
 - Frontend
-- Backend
+- Backendgi
 - DevOps
