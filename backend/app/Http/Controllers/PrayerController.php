@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Services\PrayerService;
 
 class PrayerController extends Controller{
-    public function index(Request $request, PrayerService $prayer){
-        return response()->json($prayer->getPrayerTImes($request->city));
+    public function index(Request $request, PrayerContract $prayer){
+        return response()->json($prayer->getPrayerTimes($request->city));
     }
 }

@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use App\Contracts\QuranContract;
 use App\Services\QuranService;
+use App\Contracts\PrayerContract;
+use App\Services\PrayerService;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,6 +19,11 @@ class AppServiceProvider extends ServiceProvider
         QuranContract::class,
         QuranService::class
         );
+         $this->app->bind(
+        PrayerContract::class,
+        PrayerService::class
+        );
+
     }
 
     /**
