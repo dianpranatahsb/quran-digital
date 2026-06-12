@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
         QuranContract::class,
         QuranService::class
         );
+        
          $this->app->bind(
         PrayerContract::class,
         PrayerService::class
