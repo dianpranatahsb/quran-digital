@@ -48,6 +48,6 @@ jobs:
       - name: Run Unit & Feature Tests
         env:
           APP_ENV: testing
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
         run: php artisan test
