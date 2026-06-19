@@ -11,5 +11,16 @@ class SurahApiResponseTest extends TestCase
         $response = $this->get('/api/surahs');
 
         $response->assertStatus(200);
+
+        $response->assertJsonStructure([
+            'success',
+            'message',
+            'data' => [
+                '*' => [
+                    'number',
+                    'name'
+                ]
+            ]
+        ]);
     }
 }

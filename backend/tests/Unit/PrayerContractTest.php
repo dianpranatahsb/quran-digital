@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
-use App\Contracts\PrayerContract;
 use Tests\TestCase;
+use App\Contracts\PrayerContract;
 
 class PrayerContractTest extends TestCase
 {
@@ -14,6 +14,10 @@ class PrayerContractTest extends TestCase
         $this->assertInstanceOf(
             PrayerContract::class,
             $service
+        );
+
+        $this->assertTrue(
+            method_exists($service, 'getPrayerTimes')
         );
     }
 }

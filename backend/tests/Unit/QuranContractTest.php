@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
-use App\Contracts\QuranContract;
 use Tests\TestCase;
+use App\Contracts\QuranContract;
 
 class QuranContractTest extends TestCase
 {
@@ -14,6 +14,14 @@ class QuranContractTest extends TestCase
         $this->assertInstanceOf(
             QuranContract::class,
             $service
+        );
+
+        $this->assertTrue(
+            method_exists($service, 'getSurahs')
+        );
+
+       $this->assertTrue(
+            method_exists($service, 'getSurah')
         );
     }
 }

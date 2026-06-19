@@ -11,5 +11,11 @@ class FirstSurahDetailTest extends TestCase
         $response = $this->get('/api/surahs/1');
 
         $response->assertStatus(200);
+
+        $response->assertJsonStructure([
+            'code',
+            'status',
+            'data'
+        ]);
     }
 }
