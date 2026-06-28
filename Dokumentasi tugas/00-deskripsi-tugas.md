@@ -46,8 +46,4 @@ DevOps Engineer bertanggung jawab atas infrastruktur, proses *deployment*, dan k
 
 Security Engineer bertanggung jawab atas aspek keamanan sistem secara menyeluruh, mulai dari lapisan autentikasi, enkripsi data, hingga perlindungan terhadap celah keamanan umum seperti SQL Injection, XSS, dan CSRF. Peran ini bekerja lintas domain, berkolaborasi dengan Frontend, Backend, maupun DevOps untuk memastikan praktik keamanan diterapkan di setiap lapisan sistem. Security Engineer juga bertanggung jawab melakukan audit keamanan dasar sebelum pengumpulan proyek.
 
-### Link Website
-Frontend = Vercel "https://quran-digital-six.vercel.app"
-
-Backend API = Railway "https://quran-digital-production-c510.up.railway.app/api"
 
