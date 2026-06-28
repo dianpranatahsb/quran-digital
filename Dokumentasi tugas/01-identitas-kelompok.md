@@ -100,3 +100,7 @@ Frontend bertugas menampilkan antarmuka pengguna dan mengirim permintaan data ke
   Backend berbasis Laravel yang menyediakan endpoint REST API untuk daftar surah, detail surah, jadwal sholat, dan pengelolaan riwayat pencarian.
 - Menyediakan layanan untuk:
   `Frontend React.js`
+
+//Frontend = Vercel "https://quran-digital-six.vercel.app"
+
+//Backend API = Railway "https://quran-digital-production-c510.up.railway.app/api"
