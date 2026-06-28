@@ -103,4 +103,4 @@ Frontend bertugas menampilkan antarmuka pengguna dan mengirim permintaan data ke
 
 //Frontend = Vercel "https://quran-digital-six.vercel.app"
 
-//Backend API = Railway "https://quran-digital-production-c510.up.railway.app/api"
+//Backend API = Railway "https://quran-digital-production-a1b2.up.railway.app/"
