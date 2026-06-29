@@ -9,8 +9,10 @@ class PrayerController extends Controller
 {
     public function index(Request $request, PrayerContract $prayer)
     {
+        $city = $request->city ?? 'Banda Aceh';
+
         return response()->json(
-            $prayer->getPrayerTimes($request->city)
+            $prayer->getPrayerTimes($city)
         );
     }
 }
